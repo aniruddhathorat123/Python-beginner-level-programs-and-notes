@@ -1,0 +1,32 @@
+# Create a calculator which handles +,-,*,/ and outputs answer based on the mode/ operator used
+# Hint: use 3 separate inputs 
+# Bonus: Extend functionality with extra mode so it also does celsius to fahrenheit conversion
+# formula is: temp in C*9/5 + 32 = temp in f
+
+num1 = float(input("First no: " ))
+operator = input("Mode: (+,-,*,/, `f` for celsius to fahrenheit conversion): ")
+if 'f' == operator.lower():
+    print(f"Answer: {(num1 * (9 / 5)) + 32} fahrenheit")
+else:
+    num2 = float(input("Second no: " ))
+
+    if '+' == operator:
+        print(f"Answer: {num1 + num2}")
+    elif '-' == operator:
+        print(f"Answer: {num1 - num2}")
+    elif '*' == operator:
+        print(f"Answer: {num1 * num2}")
+    elif '/' == operator:
+        print(f"Answer: {num1 / num2}")
+    else:
+        print(f"Input Error")
+
+##### OP #####: 
+# First no: 0
+# Mode: (+,-,*,/, `f` for celsius to fahrenheit conversion): f
+# Answer: 32.0 fahrenheit
+
+# First no: 34
+# Mode: (+,-,*,/, `f` for celsius to fahrenheit conversion): -
+# Second no: 2
+# Answer: 32.0

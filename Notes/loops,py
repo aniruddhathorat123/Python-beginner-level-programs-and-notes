@@ -1,0 +1,62 @@
+# Loos:
+# Three Loop Questions:
+#1. What do I want to repeat?
+#2. What do I want to change each time?
+#3. How long should we repeat?
+
+# 1. While loop:
+i=1
+while i < 6:
+    print(f"{i}." + "*"*i + "Loops are awesome" + "*"*i)
+    i += 1
+### OP ###
+# 1.*Loops are awesome*
+# 2.**Loops are awesome**
+# 3.***Loops are awesome***
+# 4.****Loops are awesome****
+# 5.*****Loops are awesome*****
+
+
+# 2: For loop:
+# loop visit each letter in sentence, even space.
+for letter in 'Hello world':
+    print(letter) 
+    
+for i in range(9):
+    print(i)
+#OP: 0 1 2 3 4 5 6 7 8
+# for 2-8 : range(2, 8)
+
+for i in range(1, 15, 3):
+    print(i)
+#OP: 1 4 7 10 13 : here 3 is `no of steps`
+
+# using list
+friends = ['John','Terry','Eric','Michael','George']
+for ele in friends:
+   print(ele)
+# OP: John
+# Terry
+# Eric
+# Michael
+# George
+
+# Using continue statement:
+for friend in friends:
+    if friend == 'Eric':
+        print('Found ' + friend + '!')
+        continue 
+        # it does not print eric again, it skips all next statements.
+    print(f"Name: {friend}")
+
+# OP: 
+# Name: John
+# Name: Terry
+# Found Eric!
+# Name: Michael
+# Name: George
+
+
+
+
+
